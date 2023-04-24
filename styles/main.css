@@ -1,0 +1,79 @@
+/* Stylesheet for Registration Form */
+
+label{
+   display:block;
+   float: left;
+   clear: left;
+   width: 184px;
+   margin-right: 40px;
+}
+img{
+	margin-right: 34px;
+	margin-left: 7px;
+}
+input{
+	display: block;
+}
+input[type="text"],input[type="email"]{
+	width: 200px;
+	margin-bottom: 10px;
+}
+fieldset{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.registration{
+	margin-top: 20px;
+}
+.registration select{
+	margin-top: 0;
+	margin-left: 9px;
+	width: 200px;
+}
+.creditcard legend{
+	width: 600px;
+	margin-left: 5px;
+}
+.creditcard label{
+	margin-left: 10px;
+}
+.expiration legend{
+	width: 600px;
+	margin-top: 25px;
+	margin-bottom: 7px;
+}
+.expiration select{
+	margin-bottom: 20px;
+	width: 200px;
+	margin-right: -6px;
+}
+legend{
+	display: block;
+	float: left;
+	margin-top: 3px;
+    margin-bottom: 5px;
+	width: 213px;
+	margin-left: -2px;
+}
+input[type="radio"], fieldset label{
+	display: inline;
+	float: none;
+	margin-top: 7px;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+fieldset label{
+    margin-right: 0;	
+}
+input[type="submit"]{
+		margin-left: 230px;
+		background-color: rgb(144, 170, 144);
+		color: rgb(245,245,165);
+		width: 135px;
+		border-radius: 20px;
+		border: none;
+		margin-top: 25px;
+		margin-bottom: -16px;
+		padding-top: 5px;
+}

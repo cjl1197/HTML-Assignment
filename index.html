@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="utf-8" />
+   <title>Lawyer CGIP Registration Form</title>
+   <link rel="icon" type="image/x-icon" href="images/CGIP-favicon.ico">
+   <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+   <link rel="stylesheet"  href="styles/cg_styles.css" type="text/css">
+   <link rel="stylesheet"  href="styles/main.css" type="text/css">
+  
+
+</head>
+
+<body>
+   <header>
+      <img src="images/cg_logo.png" alt="Computer Graphics and Image Processing" id="logoimg">
+   </header>
+   <nav>
+      <ul>
+         <li><a href="#">home page</a></li>
+         <li><a href="#">keynote address</a></li>
+         <li><a href="#">speakers</a></li>
+         <li><a href="#">general session</a></li>
+         <li><a href="#">programs</a></li>
+         <li><a href="#">workshops</a></li> 
+         <li><a href="#">travel info</a></li>
+         <li><a href="#">accommodations</a></li>
+         <li><a href="#">banquet</a></li>
+         <li><a href="#">family attractions</a></li>
+         <li><a href="#">tour Sante Fe</a></li>
+      </ul>         
+   </nav>
+   <section>
+      <h1>Conference Registration Form</h1>
+      <p>Required Item (*)</p>
+	  <form name="frmregister" action="cg_register_complete.html" method="get">
+		<label for="firstname">First name*</label>
+			<input type="text" name="txtFirstName" id="firstname" required>
+		<label for="lastname">Last name*</label>
+			<input type="text" name="txtLastName" id="lastname" required>
+		<label for="companyname">Company or University</label>
+			<input type="text" name="txtCompanyName" id="companyname" required>
+		<label for="email">Email*</label>
+			<input type="email" name="txtEmail" id="email" required>
+		<label for="membershipnumber">ACGIP Membership Number</label>
+			<input type="text" name="txtMembershipNumber" id="membershipnumber" required placeholder="acgip-nnnnnn">
+		<fieldset class="registration">
+		    <legend>Registration Category</legend>
+			<label for="registrationcategory"></label>
+			<select name="ddlregister" id="registrationcategory">
+				<option value="member" selected>ACGIP Member $695</option>
+				<option value="non-member">Non-Member $795</option>
+				<option value="student">Student $310</option>
+				<option value="guest">Guest</option>
+			</select>
+		</fieldset>
+		<fieldset class="creditcard">
+			<legend>Credit Card*</legend>
+				<label for="amex">AMEX</label>
+					<input type="radio" name="radCreditCard" id="amex" value="amex">	
+				<label for="discover">Discover</label>	
+					<input type="radio" name="radCreditCard" id="discover" value="discover">
+				<label for="visa">VISA</label>
+					<input type="radio" name="radCreditCard" id="visa" value="visa" checked>
+				<label for="mastercard">MasterCard</label>
+					<input type="radio" name="radCreditCard" id="mastercard" value="mastercard">					
+			<div class="logos">
+				<img src="images/amex.png" alt="Amex Logo">
+				<img src="images/discover.png" alt="Discover Logo">
+				<img src="images/visa.png" alt="Visa Logo">
+				<img src="images/master.png" alt="MasterCard Logo">
+			</div>
+		</fieldset>
+		<fieldset class="expiration">
+		    <legend>Expiration Month and Year</legend>
+			<label for="expiration"></label>
+			<select name="ddlmonth" id="expiration">
+				<option value="month" selected>--Month--</option>
+				<option value="january">01</option>
+				<option value="february">02</option>
+				<option value="march">03</option>
+				<option value="april">04</option>
+				<option value="may">05</option>
+				<option value="june">06</option>
+				<option value="july">07</option>
+				<option value="august">08</option>
+				<option value="september">09</option>
+				<option value="october">10</option>
+				<option value="november">11</option>
+				<option value="december">12</option>
+			</select>
+			<label for="exipiration"></label>
+			<select name="ddlyear" id="expiration">
+				<option value="year" selected>--Year--</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				<option value="2024">2024</option>
+				<option value="2025">2025</option>
+				<option value="2026">2026</option>
+				<option value="2027">2027</option>
+				<option value="2028">2028</option>
+				<option value="2029">2029</option>
+				<option value="2030">2030</option>
+			</select>
+			
+		</fieldset>
+		<label for="creditcardnumber">Credit Card</label>
+			<input type="text" name="txtCreditCardNumber" id="creditcardnumber" placeholder="9 digits">
+			<label for="securitycode">CSC</label>
+			<input type="text" name="txtSecurityCode" id="securitycode" placeholder="3 digits">
+			<input type="submit" name="btnRegister" value="register">
+          
+   </section>
+   
+   <aside>
+      <dl>
+         <dt>ACGIP Member ($695)</dt>
+         <dd>Eligible to attend all sessions and banquet</dd>
+         <dt>Non-Member ($795)</dt>
+         <dd>Eligible to attend all sessions and banquet</dd>
+         <dt>Student ($310)</dt>
+         <dd>Eligible to attend all sessions. <a href="#">Proof</a> of
+             student status required</dd>
+         <dt>Poster ($95)</dt>
+         <dd>Eligible to attend display hall and vendor stations</dd>
+         <dt>Guest ($35)</dt>
+         <dd>Eligible to attend banquet only</dd>
+      </dl>
+   </aside>
+
+   <footer>
+      <p>Association of Computer Graphics and Image Processing</p>
+   </footer>
+</body>
+</html>
